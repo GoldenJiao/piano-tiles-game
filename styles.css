@@ -1,0 +1,35 @@
+body{
+  background-image: url("image/back1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-size: cover;
+
+}
+.grid-container{
+  width: 50vh;
+  height: 50vh;
+  margin: 15% auto;
+  position: relative;
+
+  display: grid;
+  gap:5px;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+
+}
+.d{
+  background-color: #DBDFFD;
+  height: auto;
+  width: auto;
+  border: solid;
+  border-width: 2px;
+  border-color: #242F9B;
+  border-radius:5%;
+}
+.pressed {
+  background-color: #e6221f;
+  box-shadow: 2px 2px 2px 2px black;
+  opacity: 1;
+}
+.d:hover{
+  cursor: pointer;
+}
