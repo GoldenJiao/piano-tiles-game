@@ -12,7 +12,7 @@ body{
   position: relative;
 
   display: grid;
-  gap:10px;
+  gap:20px;
   grid-template-columns:1fr 1fr 1fr 1fr;
 
 }
@@ -20,5 +20,16 @@ body{
   background-color: #DBDFFD;
   height: auto;
   width: auto;
+  border: solid;
+  border-width: 2px;
+  border-color: #242F9B;
   border-radius:5%;
+}
+.pressed {
+  background-color: #e6221f;
+  box-shadow: 2px 2px 2px 2px black;
+  opacity: 1;
+}
+.d:hover{
+  cursor: pointer;
 }
