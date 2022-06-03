@@ -5,12 +5,10 @@ let tiles = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','
 const startButton = document.querySelector('.js-start');
 const tileContainer = document.querySelector('.js-container');
 const info = document.querySelector('p');
-const info1 = document.querySelector('.copy');
 
 function startGame() {
   startButton.classList.add('hidden');
   info.classList.add('hidden');
-  info1.classList.add('hidden');
   nxtRnd();
 }
 
@@ -54,7 +52,6 @@ function playRound(nextSeq) {
 
 function humanTurn() {
   tileContainer.classList.remove('unclickable');
-  //info.textContent = `Your turn: ${level} Tap${level > 1 ? 's' : ''}`;
 }
 
 function handleClick(tile) {
@@ -63,9 +60,7 @@ function handleClick(tile) {
   console.log(sequence[index]);
   console.log(humanSequence[index]);
 
-  const remainingTaps = sequence.length - humanSequence.length;
-  //console.log(humanSequence[index]);
-  //console.log(sequence[index]);
+ 
 
   if (humanSequence[index] != sequence[index]) {
     resetGame('Game over');
@@ -85,9 +80,6 @@ function handleClick(tile) {
     return;
   }
 
-  //info.textContent = `Your turn: ${remainingTaps} Tap${
-    //remainingTaps > 1 ? 's' : ''
-  //}`;
 }
 
 function resetGame(text) {
@@ -97,9 +89,6 @@ function resetGame(text) {
   level = 0;
   startButton.classList.remove('hidden');
   info.classList.remove('hidden');
-  info1.classList.remove('hidden');
-  //heading.textContent = 'Simon Game';
-  //info.classList.add('hidden');
   tileContainer.classList.add('unclickable');
 }
 
@@ -119,6 +108,4 @@ tileContainer.addEventListener('click', event => {
 
   if (tile) handleClick(tile);
 });
-//const article = document.querySelector('.d12');
-//var a=article.dataset.tile;
-//console.log(a);-works
+
