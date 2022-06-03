@@ -83,7 +83,7 @@ function handleClick(tile) {
 }
 
 function resetGame(text) {
-  alert(text);
+  alert(text+" , Score :"+(level-1));
   sequence = [];
   humanSequence = [];
   level = 0;
