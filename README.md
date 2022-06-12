@@ -1,1 +1,1 @@
-# piano-tiles-game
+# piano-tiles-game,normal mode done,hackermode partial completion
